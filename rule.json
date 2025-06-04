@@ -1,0 +1,59 @@
+[
+    {
+      "id": "demo-rule-id1",
+      "name": "百度读书搜索1",
+      "host": "https://dushu.baidu.com",
+      "icon":"https://bad.news/images/default_avatar_400x400.jpeg",
+      "httpHeaders":{},
+      "coverDecryptJS":"",
+      "subscribeJSLibrary":{},
+      "loadJS": "",
+      "sort":1,
+      "icon": "",
+      "loginUrl":"",
+      "ruleDesc": "",
+      "pwd":"",
+      "version":"",
+      "modifiedDate":1748787624,
+      "search": {
+        "queryInfo": "@js: return '/api/pc/getSearch?data=' + encodeURIComponent(JSON.stringify({word: params.keyword, pageNum: 1}))",
+        "list": "$.data.list",
+        "title": "$.title",
+        "author": "$.author",
+        "cover": "$.logo",
+        "desc": "$.description",
+        "cat": "$.categoryraw",
+        "lastChapterTitle": "$.lastChapter",
+        "detailUrl": "$.detailUrl",
+        "nextUrl": "$.nextUrl",
+        "moreKeys": {},
+        "displayType": 0
+      },
+      "pages":[],
+      "detail": {
+        "queryInfo": "$.bookDetail",
+        "cover": "$.cover",
+        "desc": "$.description",
+        "lastChapterTitle": "$.lastChapter"
+      },
+      "chapters": {
+        "queryInfo": "$.chapterList",
+        "list": "$.chapters",
+        "title": "$.title",
+        "url": "$.url",
+        "nextUrl": "$.nextUrl",
+        "moreKeys": {}
+      },
+      "content": {
+        "queryInfo": "$.content",
+        "content": "$.text",
+        "nextUrl": "$.nextUrl",
+        "moreKeys": {}
+      },
+      "ruleType":0,
+      "isEnabled": true,
+      "isLinkRule":false
+    }
+
+]
+
